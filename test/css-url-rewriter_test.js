@@ -10,6 +10,9 @@ var fs = require('fs'),
 module.exports = {
   'rewriteCSSURLs function': {
     setUp: function(done) {
+      if (!fs.existsSync(path.join(__dirname, 'results')))
+        fs.mkdirSync(path.join(__dirname, 'results'));
+
       fs.readdir(path.join(__dirname, 'fixtures'), function (err, _files) {
         files = _files || [];
         done();

@@ -15,11 +15,11 @@ var newCSS = rewriteCSSURLs(someCSS, function (url) {
 });
 ```
 
-It will process all URLs it encounters by default, even `data:` URIs, so you need to check for those manually if you want to handle them differently.
+It will process all URLs it encounters by default, even `data:` URIs, so you need to check for those manually if you want to handle them differently. The only exception is URLs in 'excluded properties' (see settings).
 
 
 ### Settings
-You can optionally pass in a settings object, like this:
+You can optionally pass in a settings object as a second argument:
 
 ```javascript
 var newCSS = rewriteCSSURLs(someCSS, settings, function (url) {
@@ -27,7 +27,7 @@ var newCSS = rewriteCSSURLs(someCSS, settings, function (url) {
 });
 ```
 
-Currently there is only one configurable setting, `excludedProperties`, which is an array of properties that you want to skip. This setting defaults to `['behavior', '*behavior']` (because you usually don't want to mess with URLs in this proprietary MSIE property, since they have weird rules associated with them).
+Currently there is only one configurable setting, `excludedProperties`, which is an array of properties that you want to skip. This setting defaults to `['behavior', '*behavior']` (because you usually don't want to mess with URLs in this proprietary MSIE property, because it has weird relativity rules).
 
 
 ## License
