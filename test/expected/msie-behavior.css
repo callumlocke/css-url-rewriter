@@ -3,11 +3,11 @@
   box-sizing: border-box;
   
   /* without hack */
-  behavior: url(scripts/boxsizing.htc);
-  behavior  : url(  scripts/boxsizing.htc  );
+  behavior: url(_scripts/boxsizing.htc);
+  behavior  : url(  _scripts/boxsizing.htc  );
   
   /* with IE<8 hack */
-  *behavior: url(scripts/boxsizing.htc);
+  *behavior: url(_scripts/boxsizing.htc);
 }
 
 .thing {

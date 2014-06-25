@@ -1,3 +1,4 @@
+@import url("_../stylesheet.css");
 .something {
   background: url('_../images/foo.png');
   background: url('_../images/bar.png?12345');
@@ -5,7 +6,9 @@
   background: url( _../images/bar.png  );
   background: url(  
     _../images/bar.png
-       )
+       );
+  background: transparent url( _../images/bar.png  );
+  background: #EEEEEE url( _../images/bar.png  );
 }
 
 .another-thing {

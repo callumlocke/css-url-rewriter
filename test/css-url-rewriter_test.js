@@ -34,7 +34,6 @@ module.exports = {
             expected = fs.readFileSync(expectedFile).toString();
 
         var result = rewriteCSSURLs(fixture, rewrite);
-
         if (SAVE)
           fs.writeFileSync(path.join(__dirname, 'results', basename), result);
 
