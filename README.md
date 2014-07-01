@@ -1,6 +1,8 @@
 # css-url-rewriter [![Build Status](https://secure.travis-ci.org/callumlocke/css-url-rewriter.png?branch=master)](http://travis-ci.org/callumlocke/css-url-rewriter)
 
-A simple function that looks for `url(...)` definitions in CSS and runs them through your rewriter function.
+[![NPM](https://nodei.co/npm/css-url-rewriter.png?downloads=true&stars=true)](https://nodei.co/npm/css-url-rewriter/)
+
+Simple function that looks for `url(...)` definitions in a string of CSS and runs them through your own rewriter function.
 
 
 ## Getting Started
@@ -9,7 +11,7 @@ Install the module with: `npm install css-url-rewriter`
 ```javascript
 var rewriteCSSURLs = require('css-url-rewriter');
 
-// Example - add a query string to all URLs
+// example - add a query string to all URLs
 var newCSS = rewriteCSSURLs(someCSS, function (url) {
   return url + '?12345'
 });
