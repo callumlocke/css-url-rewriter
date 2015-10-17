@@ -16,6 +16,7 @@
     "load-grunt-tasks": "^3.3.0",
     "time-grunt": "^1.2.1"
   },
+  "files": "lib",
   "license": "MIT",
   "main": "lib/css-url-rewriter.js",
   "repository": "callumlocke/css-url-rewriter",
