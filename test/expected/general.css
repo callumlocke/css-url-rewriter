@@ -11,7 +11,7 @@
   background: #EEEEEE url( _../images/bar.png  );
 }
 
-.another-thing {
+.another-thing {background-image:url(_something);
   background: url(_more-images/bar.jpg?12345);
   background: url( _more-images/bar.jpg?12345 );
   background: url( '_more-images/bar.jpg' );
