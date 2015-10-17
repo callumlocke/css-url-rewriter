@@ -1,14 +1,15 @@
 {
-  "curly": false,
+  "camelcase": true,
+  "curly": true,
   "eqeqeq": true,
   "immed": true,
+  "indent": 4,
   "latedef": true,
-  "newcap": true,
   "noarg": true,
-  "sub": true,
+  "node": true,
+  "noempty": true,
+  "quotmark": "single",
+  "strict": true,
   "undef": true,
-  "unused": false,
-  "boss": true,
-  "eqnull": true,
-  "node": true
+  "unused": true
 }

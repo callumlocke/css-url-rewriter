@@ -9,7 +9,7 @@ module.exports = function (grunt) {
   // Project configuration.
   grunt.initConfig({
     nodeunit: {
-      files: ['test/**/*_test.js']
+      files: 'test/**/*_test.js'
     },
     jshint: {
       options: {
@@ -20,16 +20,16 @@ module.exports = function (grunt) {
         src: 'Gruntfile.js'
       },
       lib: {
-        src: ['lib/*.js']
+        src: 'lib/*.js'
       },
       test: {
-        src: ['test/*.js']
+        src: 'test/*.js'
       }
     },
     watch: {
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
-        tasks: ['jshint:gruntfile']
+        tasks: 'jshint:gruntfile'
       },
       test: {
         files: [

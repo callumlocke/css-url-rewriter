@@ -1,17 +1,18 @@
 'use strict';
 
-var SAVE = true;
-
 var fs = require('fs'),
     path = require('path'),
-    rewriteCSSURLs = require('../lib/css-url-rewriter.js'),
+    rewriteCSSURLs = require('../lib/css-url-rewriter.js');
+
+var SAVE = true,
     files = [];
 
 module.exports = {
   'rewriteCSSURLs function': {
     setUp: function(done) {
-      if (!fs.existsSync(path.join(__dirname, 'results')))
+      if (!fs.existsSync(path.join(__dirname, 'results'))) {
         fs.mkdirSync(path.join(__dirname, 'results'));
+      }
 
       fs.readdir(path.join(__dirname, 'fixtures'), function (err, _files) {
         files = _files || [];
@@ -34,8 +35,9 @@ module.exports = {
             expected = fs.readFileSync(expectedFile).toString();
 
         var result = rewriteCSSURLs(fixture, rewrite);
-        if (SAVE)
+        if (SAVE) {
           fs.writeFileSync(path.join(__dirname, 'results', basename), result);
+        }
 
         test.strictEqual(result, expected, basename);
       }
