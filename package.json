@@ -1,37 +1,25 @@
 {
   "name": "css-url-rewriter",
-  "version": "0.1.1",
-  "main": "lib/css-url-rewriter.js",
   "description": "Looks for url(...) definitions in CSS and rewrites them",
-  "homepage": "https://github.com/callumlocke/css-url-rewriter",
-  "bugs": "https://github.com/callumlocke/css-url-rewriter/issues",
-  "author": {
-    "name": "Callum Locke",
-    "url": "https://github.com/callumlocke"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/callumlocke/css-url-rewriter"
-  },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
-  "scripts": {
-    "test": "grunt nodeunit"
+  "version": "0.1.1",
+  "author": "Callum Locke (https://github.com/callumlocke)",
+  "dependencies": {
+    "extend": "^3.0.0"
   },
   "devDependencies": {
-    "grunt-contrib-jshint": "~0.7.0",
-    "grunt-contrib-nodeunit": "~0.2.0",
-    "grunt-contrib-watch": "~0.5.0",
-    "load-grunt-tasks": "~0.2.0",
-    "time-grunt": "~0.2.0",
-    "jshint-stylish": "~0.1.3",
-    "grunt-cli": "~0.1.11",
-    "grunt": "~0.4.2"
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "jshint-stylish": "^2.0.1",
+    "load-grunt-tasks": "^3.3.0",
+    "time-grunt": "^1.2.1"
   },
-  "dependencies": {
-    "extend": "~1.2.1"
+  "license": "MIT",
+  "main": "lib/css-url-rewriter.js",
+  "repository": "callumlocke/css-url-rewriter",
+  "scripts": {
+    "test": "grunt nodeunit"
   }
 }
