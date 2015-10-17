@@ -1,8 +1,16 @@
 {
   "name": "css-url-rewriter",
-  "description": "Looks for url(...) definitions in CSS and rewrites them",
+  "description": "Looks for `url(...)` definitions in CSS and rewrites them",
   "version": "0.1.2",
   "author": "Callum Locke (https://github.com/callumlocke)",
+  "repository": "callumlocke/css-url-rewriter",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
   "dependencies": {
     "extend": "^3.0.0"
   },
@@ -16,11 +24,8 @@
     "load-grunt-tasks": "^3.3.0",
     "time-grunt": "^1.2.1"
   },
-  "files": "lib",
-  "license": "MIT",
-  "main": "lib/css-url-rewriter.js",
-  "repository": "callumlocke/css-url-rewriter",
-  "scripts": {
-    "test": "grunt nodeunit"
-  }
+  "files": [
+    "lib"
+  ],
+  "main": "lib/css-url-rewriter.js"
 }
