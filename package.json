@@ -1,6 +1,6 @@
 {
   "name": "css-url-rewriter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/css-url-rewriter.js",
   "description": "Looks for url(...) definitions in CSS and rewrites them",
   "homepage": "https://github.com/callumlocke/css-url-rewriter",
