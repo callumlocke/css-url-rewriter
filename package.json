@@ -1,7 +1,7 @@
 {
   "name": "css-url-rewriter",
   "description": "Looks for url(...) definitions in CSS and rewrites them",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "Callum Locke (https://github.com/callumlocke)",
   "dependencies": {
     "extend": "^3.0.0"
