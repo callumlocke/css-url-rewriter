@@ -1,6 +1,6 @@
-# css-url-rewriter [![Build Status](https://secure.travis-ci.org/callumlocke/css-url-rewriter.png?branch=master)](http://travis-ci.org/callumlocke/css-url-rewriter)
+# css-url-rewriter [![Build Status](https://secure.travis-ci.org/callumlocke/css-url-rewriter.svg?branch=master)](http://travis-ci.org/callumlocke/css-url-rewriter)
 
-[![NPM](https://nodei.co/npm/css-url-rewriter.png?downloads=true&stars=true)](https://nodei.co/npm/css-url-rewriter/)
+[![NPM](https://nodei.co/npm/css-url-rewriter.svg?downloads=true&stars=true)](https://nodei.co/npm/css-url-rewriter/)
 
 Simple function that looks for `url(...)` definitions in a string of CSS and runs them through your own rewriter function.
 
@@ -8,12 +8,12 @@ Simple function that looks for `url(...)` definitions in a string of CSS and run
 ## Getting Started
 Install the module with: `npm install css-url-rewriter`
 
-```javascript
+```js
 var rewriteCSSURLs = require('css-url-rewriter');
 
 // example - add a query string to all URLs
 var newCSS = rewriteCSSURLs(someCSS, function (url) {
-  return url + '?12345'
+  return url + '?12345';
 });
 ```
 
@@ -23,9 +23,9 @@ It will process all URLs it encounters by default, even `data:` URIs, so you nee
 ### Settings
 You can optionally pass in a settings object as a second argument:
 
-```javascript
+```js
 var newCSS = rewriteCSSURLs(someCSS, settings, function (url) {
-  return url + '?12345'
+  return url + '?12345';
 });
 ```
 
