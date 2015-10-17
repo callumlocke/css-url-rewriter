@@ -4,7 +4,7 @@
   background: url('_../images/bar.png?12345');
   background: url(_../images/foo.png) ;
   background: url( _../images/bar.png  );
-  background: url(  
+  background: url(
     _../images/bar.png
        );
   background: transparent url( _../images/bar.png  );
@@ -16,7 +16,7 @@
   background: url( _more-images/bar.jpg?12345 );
   background: url( '_more-images/bar.jpg' );
   background: url(
-    _more-images/bar.jpg   
+    _more-images/bar.jpg
   );
   background  : url(_images/thing.jpg)  ;
 }
