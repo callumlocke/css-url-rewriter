@@ -4,8 +4,8 @@
 
 Simple function that looks for `url(...)` definitions in a string of CSS and runs them through your own rewriter function.
 
-
 ## Getting Started
+
 Install the module with: `npm install css-url-rewriter`
 
 ```js
@@ -19,8 +19,8 @@ var newCSS = rewriteCSSURLs(someCSS, function (url) {
 
 It will process all URLs it encounters by default, even `data:` URIs, so you need to check for those manually if you want to handle them differently. The only exception is URLs in 'excluded properties' (see settings).
 
-
 ### Settings
+
 You can optionally pass in a settings object as a second argument:
 
 ```js
@@ -31,6 +31,6 @@ var newCSS = rewriteCSSURLs(someCSS, settings, function (url) {
 
 Currently there is only one configurable setting, `excludedProperties`, which is an array of properties that you want to skip. This setting defaults to `['behavior', '*behavior']` (because you usually don't want to mess with URLs in this proprietary MSIE property, because it has weird relativity rules).
 
-
 ## License
+
 Copyright (c) 2014 Callum Locke. Licensed under the MIT license.
