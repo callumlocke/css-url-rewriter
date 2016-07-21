@@ -3,8 +3,12 @@ sudo: false
 language: node_js
 
 node_js:
-  - '0.10'
-  - 'stable'
+  - "0.10"
+  - "0.12"
+  - "4"
+  - "5"
+  - "6"
+  - "iojs"
 
 matrix:
-    fast_finish: true
+  fast_finish: true
